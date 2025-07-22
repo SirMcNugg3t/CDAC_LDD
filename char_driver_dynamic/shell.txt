@@ -1,0 +1,11 @@
+sudo mknod /dev/mychardev c 240 0
+sudo chmod 666 /dev/mychardev
+
+// Write 
+
+	echo "hello kernel" > /dev/mychardev
+
+// Read
+
+	cat /dev/mychardev
+
